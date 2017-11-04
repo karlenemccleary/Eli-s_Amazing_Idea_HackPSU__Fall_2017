@@ -1,0 +1,38 @@
+#Footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+td {
+	margin: 20px;
+}
+
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
+
+.InputRegionItems {
+	z-index: 1;
+}
+
+.inputItem {
+	margin-top: 150px;
+}
+
+.item {
+    width:50%;
+    height:95px;
+    margin-bottom:20px;
+    padding:20px;
+    background:#fff;
+}
+
+.headerItem {
+    margin-bottom:0px;
+    padding:0px;
+    width:100%;
+    background:#fff;
+}
