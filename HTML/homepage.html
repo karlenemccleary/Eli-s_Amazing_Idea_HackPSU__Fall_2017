@@ -15,7 +15,7 @@
 
 <body>
 	<div id="container">
-		<div class="item headerItem" id="header" style="display: block;">
+		<div id="header" style="display: block;">
 			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" style="height:125px;">
 				<header class="mdl-layout__header" style="height:125px;">
 					<div class="mdl-layout__header-row">
@@ -36,127 +36,70 @@
 
 
 		<div id="body">
-			<table class="center">
-<tr>
 
-</tr>
-				<tr id="InputRegion">
-					<td id="InputHandle">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-							<input class="mdl-textfield__input" type="text" id="TwitterHandle">
-							<label class="mdl-textfield__label" for="TwitterHandle">Twitter Handle</label>
-						</div>
-					</td>
-
-					<td id="InputName">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-							<input class="mdl-textfield__input" type="text" id="CEOName">
-							<label class="mdl-textfield__label" for="CEOName">CEO Name</label>
-						</div>
-					</td>
-
-					<td id="InputCompnay">
-						<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-							<input class="mdl-textfield__input" type="text" id="CompanyName">
-							<label class="mdl-textfield__label" for="CompanyName">Company Name</label>
-						</div>
-					</td>
-
-					<td id="ToggleTextInput">
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect " for="switch-2">
-							<span class="mdl-switch__label ">Custom Text</span>
-							<input type="checkbox" id="switch-2" class="mdl-switch__input ">
-						</label>
-					</td>
-				</tr> 
-
+			<table  class="center">
 				<tr>
-
 					<td>
-						<table>
-
-							<!-- Traits Button -->
-							<tr>
-								<td>
-									<div>
-										<div class="mdl-card mdl-shadow--4dp itemCards">
-											<div class="mdl-card__title">
-												<h2 class="mdl-card__title-text">Traits</h2>
-											</div>
-											<div class="mdl-card__media">
-												<img src="photo.jpg" width="220" height="140" border="0" alt="" style="padding:20px;">
-											</div>
-											<div class="mdl-card__supporting-text">
-												Description
-											</div>
-										</div>
+						<table id="InputOutputTable">
+							<tr id="InputRegion">
+								<td id="InputHandle">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+										<input class="mdl-textfield__input" type="text" id="TwitterHandle">
+										<label class="mdl-textfield__label" for="TwitterHandle">Twitter Handle</label>
 									</div>
 								</td>
-							</tr>
 
-							<!-- Personality Portait Button -->
-							<tr>
-								<td>
-									<div>	
-										<div class="mdl-card mdl-shadow--4dp itemCards">
-											<div class="mdl-card__title">
-												<h2 class="mdl-card__title-text">Personality Portrait</h2>
-											</div>
-											<div class="mdl-card__media">
-												<img src="photo.jpg" width="220" height="140" border="0" alt="" style="padding:20px;">
-											</div>
-											<div class="mdl-card__supporting-text">
-												Description
-											</div>
-										</div>
+								<td id="InputName">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+										<input class="mdl-textfield__input" type="text" id="CEOName">
+										<label class="mdl-textfield__label" for="CEOName">CEO Name</label>
 									</div>
 								</td>
-							</tr>
 
-							<!-- Tone Analyzer Button -->
-							<tr>
-								<td>
-									<div>
-										<div class="mdl-card mdl-shadow--4dp itemCards">
-											<div class="mdl-card__title">
-												<h2 class="mdl-card__title-text">Tone Analyzer</h2>
-											</div>
-											<div class="mdl-card__media">
-												<img src="photo.jpg" width="220" height="140" border="0" alt="" style="padding:20px;">
-											</div>
-											<div class="mdl-card__supporting-text">
-												Description
-											</div>
-										</div>
+								<td id="InputCompnay">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+										<input class="mdl-textfield__input" type="text" id="CompanyName">
+										<label class="mdl-textfield__label" for="CompanyName">Company Name</label>
 									</div>
 								</td>
-							</tr>
 
-							<!-- News Button -->
-							<tr>
+								<td id="ToggleTextInput">
+									<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect " for="switch-2">
+										<span class="mdl-switch__label ">Custom Text</span>
+										<input type="checkbox" id="switch-2" class="mdl-switch__input ">
+									</label>
+								</td>
+							</tr> 
+
+							<tr id="OutputRegion">
 								<td>
-									<div>
-										<div class="mdl-card mdl-shadow--4dp itemCards">
-											<div class="mdl-card__title">
-												<h2 class="mdl-card__title-text">News</h2>
-											</div>
-											<div class="mdl-card__media">
-												<img src="photo.jpg" width="220" height="140" border="0" alt="" style="padding:20px;">
-											</div>
-											<div class="mdl-card__supporting-text">
-												Description
-											</div>
-										</div>
+									<div style="z-index: 2">
+										<label style="display: inline-block; margin:10px; margin-left: 25px;">Attribute1</label>
+										<input class="mdl-slider mdl-js-slider" readonly="true" type="range" min="0" max="100" value="50" tabindex="0" style="z-index: -1">
 									</div>
+
 								</td>
 							</tr>
-
 						</table>
 					</td>
 
-				</tr>
+					<td>
+						<table id="NewsOutput">
+							<tr>
+								<td>
+									<div style="margin-left: 550px;">
+										<div>
 
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 			</table>
+
+
 		</div>
 
 
