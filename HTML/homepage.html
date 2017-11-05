@@ -40,56 +40,64 @@
 			<table  class="center">
 				<tr>
 					<td>
-						<table id="InputOutputTable">
+						<table id="InputOutputTable" class="center">
 							<tr id="InputRegion">
-								<td id="InputHandle">
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-										<input class="mdl-textfield__input" type="text" id="TwitterHandle">
-										<label class="mdl-textfield__label" for="TwitterHandle">Twitter Handle</label>
-									</div>
-								</td>
+								<div>
+									<td id="InputHandle">
+										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+											<input class="mdl-textfield__input" type="text" id="TwitterHandle">
+											<label class="mdl-textfield__label" for="TwitterHandle">Twitter Handle</label>
+										</div>
+									</td>
 
-								<td id="InputName">
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-										<input class="mdl-textfield__input" type="text" id="CEOName">
-										<label class="mdl-textfield__label" for="CEOName">CEO Name</label>
-									</div>
-								</td>
+									<td id="InputName">
+										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+											<input class="mdl-textfield__input" type="text" id="CEOName">
+											<label class="mdl-textfield__label" for="CEOName">CEO Name</label>
+										</div>
+									</td>
 
-								<td id="InputCompnay">
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
-										<input class="mdl-textfield__input" type="text" id="CompanyName">
-										<label class="mdl-textfield__label" for="CompanyName">Company Name</label>
-									</div>
-								</td>
+									<td id="InputCompnay">
+										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label InputRegionItems">
+											<input class="mdl-textfield__input" type="text" id="CompanyName">
+											<label class="mdl-textfield__label" for="CompanyName">Company Name</label>
+										</div>
+									</td>
 
-								<td id="ToggleTextInput">
-									<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect " for="switch-2">
-										<span class="mdl-switch__label ">Custom Text</span>
-										<input type="checkbox" id="switch-2" class="mdl-switch__input ">
-									</label>
-								</td>
+									<td id="ToggleTextInput">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
+									</td>
+								</div>
 							</tr> 
-
-							<tr id="OutputRegion">
-								<td>
-									<div style="z-index: 2">
-										<label style="display: inline-block; margin:10px; margin-left: 25px;">Attribute1</label>
-										<input class="mdl-slider mdl-js-slider" readonly="true" type="range" min="0" max="100" value="50" tabindex="0" style="z-index: -1">
-									</div>
-
-								</td>
-							</tr>
 						</table>
 					</td>
-
+				</tr>
+				<tr>
 					<td>
-						<table id="NewsOutput">
+						<table class="center">
 							<tr>
-								<td>
-									<div style="margin-left: 550px;">
-										<div>
+								<td style="padding: 0px; margin: 0px;">
+									<div class="outputCard" style="margin:0 auto; text-align: center; width: 500px;">
+										<div class="toneCard mdl-card mdl-shadow--6dp inner" style=" width: 500px;">
+											<div class="mdl-card__title mdl-card--expand"S>
+												<div>
+													
+												</div>
+												<h2 class="mdl-card__title-text">Tone</h2>
+											</div>
+										</div>
+									</div>
+								</td>
 
+								<td align="center" style="padding: 0px; margin: 0px;">
+									<div class="StocksOuput" class="expandCard" style="margin:0 auto; text-align: center; width: 500px;">
+										<div class="stocksCard mdl-card mdl-shadow--6dp inner" style="width: 500px;">
+											<div class="mdl-card__title mdl-card--expand expandCard">
+												<div>
+													
+												</div>
+												<h2 class="mdl-card__title-text">Stock</h2>
+											</div>
 										</div>
 									</div>
 								</td>
