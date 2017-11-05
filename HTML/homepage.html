@@ -1,47 +1,47 @@
-	<!DOCTYPE html>
-	<html>
-	
-	
-	<head>
-		<meta charset="UTF-8">
-		<title>CEO Vester</title>
-		
-		<link rel="stylesheet" type="text/css" href="homepageStyles.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-green.min.css">
-	</head>
-	
-	
-	<body>
-		<div>
-			<div class="item headerItem" id="TitleBar" style="display: block;">
-				<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-					<header class="mdl-layout__header">
-						<div class="mdl-layout__header-row">
-							<!-- Title -->
-							<span class="mdl-layout-title">CEO Vester</span>
-							<!-- Add spacer, to align navigation to the right -->
-							<div class="mdl-layout-spacer"></div>
-							<!-- Navigation. We hide it in small screens. -->
-							<nav class="mdl-navigation mdl-layout--large-screen-only">
-								<a class="mdl-navigation__link" href="">Link</a>
-							</nav>
-						</div>
-					</header>
-					<div class="mdl-layout__drawer">
-						<span class="mdl-layout-title">Title</span>
-						<nav class="mdl-navigation">
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>CEO Vester</title>
+
+	<link rel="stylesheet" type="text/css" href="homepageStyles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-green.min.css">
+</head>
+
+
+<body>
+	<div id="container">
+		<div class="item headerItem" id="header" style="display: block;">
+			<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+				<header class="mdl-layout__header">
+					<div class="mdl-layout__header-row">
+						<!-- Title -->
+						<span class="mdl-layout-title">CEO Vester</span>
+						<!-- Add spacer, to align navigation to the right -->
+						<div class="mdl-layout-spacer"></div>
+						<!-- Navigation. We hide it in small screens. -->
+						<nav class="mdl-navigation mdl-layout--large-screen-only">
 							<a class="mdl-navigation__link" href="">Link</a>
 						</nav>
 					</div>
-					<main class="mdl-layout__content">
-						<div class="page-content"><!-- Your content goes here --></div>
-					</main>
+				</header>
+				<div class="mdl-layout__drawer">
+					<span class="mdl-layout-title">Title</span>
+					<nav class="mdl-navigation">
+						<a class="mdl-navigation__link" href="">Link</a>
+					</nav>
 				</div>
+				<main class="mdl-layout__content">
+					<div class="page-content"><!-- Your content goes here --></div>
+				</main>
 			</div>
-			
+		</div>
 
 
+		<div id="body">
 			<table class="center">
 
 				<tr id="InputRegion">
@@ -72,7 +72,6 @@
 							<input type="checkbox" id="switch-2" class="mdl-switch__input">
 						</label>
 					</td>
-
 				</tr>
 
 				<tr>
@@ -84,7 +83,7 @@
 							<tr>
 								<td>
 									<div>
-										<div class="mdl-card mdl-shadow--4dp">
+										<div class="mdl-card mdl-shadow--4dp itemCards">
 											<div class="mdl-card__title">
 												<h2 class="mdl-card__title-text">Traits</h2>
 											</div>
@@ -103,7 +102,7 @@
 							<tr>
 								<td>
 									<div>	
-										<div class="mdl-card mdl-shadow--4dp">
+										<div class="mdl-card mdl-shadow--4dp itemCards">
 											<div class="mdl-card__title">
 												<h2 class="mdl-card__title-text">Personality Portrait</h2>
 											</div>
@@ -122,7 +121,7 @@
 							<tr>
 								<td>
 									<div>
-										<div class="mdl-card mdl-shadow--4dp">
+										<div class="mdl-card mdl-shadow--4dp itemCards">
 											<div class="mdl-card__title">
 												<h2 class="mdl-card__title-text">Tone Analyzer</h2>
 											</div>
@@ -141,7 +140,7 @@
 							<tr>
 								<td>
 									<div>
-										<div class="mdl-card mdl-shadow--4dp">
+										<div class="mdl-card mdl-shadow--4dp itemCards">
 											<div class="mdl-card__title">
 												<h2 class="mdl-card__title-text">News</h2>
 											</div>
@@ -162,36 +161,37 @@
 				</tr>
 
 			</table>
-
-
-			
-
-			<div id="Footer">
-				<footer class="mdl-mini-footer">
-					<div class="mdl-mini-footer__left-section">
-						<div class="mdl-logo">
-							More Information
-						</div>
-						<ul class="mdl-mini-footer__link-list">
-							<li><a href="#">Help</a></li>
-							<li><a href="#">Privacy and Terms</a></li>
-							<li><a href="#">User Agreement</a></li>
-						</ul>
-					</div>
-					<div class="mdl-mini-footer__right-section">
-						<button class="mdl-mini-footer__social-btn"></button>
-						<button class="mdl-mini-footer__social-btn"></button>
-						<button class="mdl-mini-footer__social-btn"></button>
-					</div>
-				</footer>
-			</div>
-
 		</div>
 
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	</body>
-
-	
 
 
-	</html>
+
+		<div id="footer">
+			<footer class="mdl-mini-footer">
+				<div class="mdl-mini-footer__left-section">
+					<div class="mdl-logo">
+						More Information
+					</div>
+					<ul class="mdl-mini-footer__link-list">
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Privacy and Terms</a></li>
+						<li><a href="#">User Agreement</a></li>
+					</ul>
+				</div>
+				<div class="mdl-mini-footer__right-section">
+					<button class="mdl-mini-footer__social-btn"></button>
+					<button class="mdl-mini-footer__social-btn"></button>
+					<button class="mdl-mini-footer__social-btn"></button>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+
+
+
+</html>
