@@ -96,62 +96,6 @@
 											</div>
 												<canvas id="myChart" width="200" height="200"></canvas>
 												<input id="stockSymbol"><button id="stockButton" onclick="getStocks()">Enter</button>
-<script>
-function getStocks() {
-	var ctx = document.getElementById("myChart").getContext('2d');
-	var symbol = document.getElementById("stockSymbol").value
-	var stockPrices;
-	$.ajax({
-	    url: "/historicals?symbol=" + symbol,
-	    success: function(data) {
-	      stockPrices = data;
-	    },
-	    async:false
-	});
-	console.log(stockPrices)
-	var labels = [];
-	for(i = 0; i < 39; i++) {
-		labels.push(i)
-	}
-	console.log(labels)
-	var myChart = new Chart(ctx, {
-	    type: 'line',
-	    data: {
-	        labels: labels,
-	        datasets: [{
-	            label: '# of Votes',
-	            data: stockPrices,
-	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)'
-	            ],
-	            borderColor: [
-	                'rgba(255,99,132,1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)'
-	            ],
-	            borderWidth: 1
-	        }]
-	    },
-	    options: {
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                    beginAtZero:false
-	                }
-	            }],
-	        }
-	    }
-	});
-}
-</script>
 											<div class="mdl-card__supporting-text">
 												Description
 											</div>
@@ -193,6 +137,7 @@ function getStocks() {
 											<div class="mdl-card__supporting-text">
 												Description
 											</div>
+											<div id = "twitterToneResult">He heres some stuff </div>
 											<input id="twitterHandle"><button id="twitterButton" onclick="getTwitterTone()">Enter</button>
 										</div>
 									</div>
@@ -252,6 +197,75 @@ function getStocks() {
 	</div>
 
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script>
+function getStocks() {
+	var ctx = document.getElementById("myChart").getContext('2d');
+	var symbol = document.getElementById("stockSymbol").value
+	var stockPrices;
+	$.ajax({
+	    url: "/historicals?symbol=" + symbol,
+	    success: function(data) {
+	      stockPrices = data;
+	    },
+	    async:false
+	});
+	console.log(stockPrices)
+	var labels = [];
+	for(i = 0; i < 39; i++) {
+		labels.push(i)
+	}
+	console.log(labels)
+	var myChart = new Chart(ctx, {
+	    type: 'line',
+	    data: {
+	        labels: labels,
+	        datasets: [{
+	            label: '# of Votes',
+	            data: stockPrices,
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 0.2)',
+	                'rgba(54, 162, 235, 0.2)',
+	                'rgba(255, 206, 86, 0.2)',
+	                'rgba(75, 192, 192, 0.2)',
+	                'rgba(153, 102, 255, 0.2)',
+	                'rgba(255, 159, 64, 0.2)'
+	            ],
+	            borderColor: [
+	                'rgba(255,99,132,1)',
+	                'rgba(54, 162, 235, 1)',
+	                'rgba(255, 206, 86, 1)',
+	                'rgba(75, 192, 192, 1)',
+	                'rgba(153, 102, 255, 1)',
+	                'rgba(255, 159, 64, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero:false
+	                }
+	            }],
+	        }
+	    }
+	});
+}
+
+function getTwitterTone() {
+	var twitterResult;
+	var twitterHandle = document.getElementById("twitterHandle").value
+	$.ajax({
+    	url: "/twitterTone?twitterHandle=" + twitterHandle,
+    	success: function(data) {
+    	  twitterResult = data;
+    	},
+    	async:false
+	});
+	$("#twitterToneResult").text(twitterResult)
+}
+</script>
 </body>
 
 
