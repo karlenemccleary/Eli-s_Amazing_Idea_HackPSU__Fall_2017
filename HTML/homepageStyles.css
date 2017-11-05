@@ -17,7 +17,7 @@ td {
 
 #header {
    background:#ff0;
-   padding-bot:10px; 
+   padding-bottom:10px; 
 }
 
 #body {
@@ -36,7 +36,12 @@ td {
 #InputRegion {
 	padding-top: 50px;
 }
-
+#Logo {
+  margin-left: -60px;
+  padding-top: 60px;
+  width:203px;
+  height:119px;
+}
 
 
 .center {
